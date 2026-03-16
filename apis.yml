@@ -1,16 +1,28 @@
+aid: gitops
 name: GitOps
 description: A operational framework that takes DevOps best practices used for application
   development such as version control, collaboration, compliance, and CI/CD, and applies
   them to infrastructure automation. GitOps uses Git as a single source of truth for
   declarative infrastructure and applications.
-url: https://www.gitops.tech/
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+access: 3rd-Party
+created: '2025-01-01'
+modified: '2026-03-16'
+position: Consumer
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/gitops/refs/heads/main/apis.yml
+specificationVersion: '0.19'
 tags:
-- DevOps
-- Infrastructure As Code
-- Continuous Deployment
-- Automation
-- Version Control
-created: '2025'
-modified: '2025'
+  - DevOps
+  - Infrastructure As Code
+  - Continuous Deployment
+  - Automation
+  - Version Control
 apis: []
-common: []
+common:
+  - type: Website
+    url: https://www.gitops.tech/
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
