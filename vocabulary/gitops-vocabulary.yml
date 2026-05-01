@@ -1,0 +1,28 @@
+aid: gitops:vocabulary
+name: GitOps Vocabulary
+description: Key terms and concepts in the GitOps operational model.
+terms:
+  - term: GitOps
+    definition: An operating model where Git is the source of truth for declarative infrastructure and applications, with automated reconciliation.
+  - term: Declarative State
+    definition: A description of what the system should look like rather than imperative steps to get there.
+  - term: Reconciler
+    definition: An agent (e.g., Argo CD, Flux) that continually compares actual state to desired state and acts to converge them.
+  - term: Source of Truth
+    definition: The Git repository whose contents are authoritative for the system's desired configuration.
+  - term: Drift
+    definition: The condition when live system state diverges from the declared state in Git.
+  - term: Pull Model
+    definition: A deployment pattern where the cluster pulls configuration from Git rather than CI pushing changes to the cluster.
+  - term: Continuous Deployment
+    definition: Automated promotion of changes to environments triggered by Git events.
+  - term: Manifest
+    definition: A declarative configuration file (often YAML) describing a Kubernetes resource or other system object.
+  - term: Pull Request Workflow
+    definition: The collaboration practice of proposing changes via pull/merge requests with review and CI gating.
+  - term: Sealed Secret
+    definition: An encrypted secret safely stored in Git that is decrypted only by an authorized in-cluster controller.
+  - term: Application
+    definition: In Argo CD, a CRD that maps a source manifest in Git to a target cluster and namespace.
+  - term: Kustomization
+    definition: In Flux/Kustomize, a CRD or directory describing how to build manifests from a base and overlays.

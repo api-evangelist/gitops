@@ -1,0 +1,24 @@
+aid: gitops:rules
+name: GitOps Rules
+description: Core principles and operational rules for adopting GitOps.
+rules:
+  - name: Declarative Configuration
+    description: The entire system desired state is described declaratively (e.g., YAML manifests, Helm charts, Kustomize overlays).
+  - name: Version Controlled Source of Truth
+    description: The canonical desired state is stored in Git; every change is committed and reviewable.
+  - name: Approved Changes Through Pull Requests
+    description: Modifications to the system flow through pull/merge requests with peer review and CI checks.
+  - name: Automated Reconciliation
+    description: A software agent continuously reconciles the live state with the desired state stored in Git.
+  - name: Continuous Drift Detection
+    description: The reconciler reports drift when the live state diverges from the declared state.
+  - name: Pull Over Push Deployments
+    description: Deployments use a pull model; agents inside the cluster fetch desired state instead of CI pushing into clusters.
+  - name: Observable Operations
+    description: All actions taken by the agent and all state transitions are logged and observable.
+  - name: Rollback Through Git Revert
+    description: Recovery is performed by reverting commits in Git, and the reconciler converges the system back.
+  - name: Environment Parity
+    description: Each environment is described as code in Git, enabling reproducible promotion across environments.
+  - name: Secret Management
+    description: Secrets are encrypted in Git (e.g., SOPS, Sealed Secrets) or referenced from external secret stores.
