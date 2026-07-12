@@ -18,6 +18,8 @@ tags:
   - Version Control
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/gitops-domain-security.yml
   - type: Website
     url: https://www.gitops.tech/
   - type: OpenGitOps Principles
