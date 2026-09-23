@@ -1,5 +1,5 @@
-aid: gitops:rules
-name: GitOps Rules
+x-aid: gitops:rules
+x-name: GitOps Rules
 description: Core principles and operational rules for adopting GitOps.
 rules:
   - name: Declarative Configuration
